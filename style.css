@@ -1,0 +1,150 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+:root{
+	--white: #f1f2f6;
+	--lighgrey: #dfe4ea;
+	--lightBlack: #2f3542;
+}
+
+#main {
+	background: #f1f2f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+p {
+	font-size: 12px;
+}
+
+.bg1, .bg2{
+	background: var(--lightBlack);
+	border-radius: 50%;
+	position: absolute;
+}
+
+.bg1{
+	height: 300px;
+	width: 300px;
+	left: 0;
+	z-index: 1;
+	margin: 10vh 5vw;
+	top: 0;
+}
+
+.bg2{
+	height: 150px;
+	width: 150px;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	margin: 20vh 10vw;
+}
+
+.top, 
+.middle,
+.bottom{
+	position: relative;
+	z-index: 5;
+	background: rgba(255, 255, 255, 0.3);
+	padding: 3%;
+	backdrop-filter: blur(15px);
+	border-radius: 20px;
+
+}
+
+#title{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+	padding: 0 20px;
+}
+
+#title p{
+	text-align: center;
+}
+
+#img-div{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background: var(--lighgrey);
+	padding: 20px 0;
+	border-radius: 10px;
+}
+
+img{
+	filter: grayscale(100%);
+	width: 80%;
+  	max-width: 100%;
+  	display: block;
+}
+
+#img-div p{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.middle, .bottom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	flex-direction: column;
+}
+
+#tribute-info{
+	width: 70%;
+}
+
+#tribute-info li{
+	margin-bottom: 15px;
+}
+
+#tribute-link{
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+	width: 70%;
+}
+
+#tribute-link{
+	display: inline-block;
+	padding: 8px 16px;
+	background: var(--lightBlack);
+	text-decoration: none;
+	color: var(--white);
+	border-radius: 5px;
+	width: auto;
+	transition: .7s;
+}
+
+#tribute-link:hover{
+	opacity: .5;
+}
+
+.quotes{
+	width: 70%;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.quotes p{
+	font-size: 1px;
+}
+
+.bottom{
+	margin: 50px 0;
+}
